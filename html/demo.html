@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="myAlert()">Click Me!</button><br />
+
+<img id = "image" src = "/home/yoshi/Desktop/Blog/js/resistance.jpeg" alt = 
+"I am one with the Force. The Force is one with me." onmouseover = "Change()"
+onmouseout = "Revert()"  style = "width:128px;height:128px;" />
+
+<script>
+// Use console.log() to debug
+	const x = 4;
+const y = 5;
+let z = x + y;
+function myFunction() {
+  document.getElementById("demo").innerHTML = z;
+}
+function myAlert() {
+	alert("You Suck");
+}
+function Change(){
+	document.getElementById("image").src = "/home/yoshi/Desktop/Blog/js/dark_side.jpg";
+}
+function Revert(){
+	document.getElementById("image").src = "/home/yoshi/Desktop/Blog/js/resistance.jpeg";
+}
+</script>
+
+</body>
+</html> 
+
